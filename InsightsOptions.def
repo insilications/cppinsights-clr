@@ -21,14 +21,14 @@ INSIGHTS_OPT("alt-syntax-subscription",
              "Transform array subscriptions E1[E2] into (*(E1 + E2)).", gInsightCategory)
 INSIGHTS_OPT("show-all-implicit-casts", ShowAllImplicitCasts, false, "Show all implicit casts which can be noisy.", gInsightCategory)
 INSIGHTS_OPT("show-all-callexpr-template-parameters", ShowAllCallExprTemplateParameters, false, "Show all template parameters of a CallExpr.", gInsightCategory)
-INSIGHTS_OPT("edu-show-initlist", UseShowInitializerList, false, "Transform a std::initializer list", gInsightEduCategory)
-INSIGHTS_OPT("edu-show-noexcept", UseShowNoexcept, false, "Transform a noexcept function", gInsightEduCategory)
-INSIGHTS_OPT("edu-show-padding", UseShowPadding, false, "Show the padding bytes in a struct/class", gInsightEduCategory)
+INSIGHTS_OPT("edu-show-initlist", UseShowInitializerList, false, "Transform a std::initializer list", gInsightCategory)
+INSIGHTS_OPT("edu-show-noexcept", UseShowNoexcept, false, "Transform a noexcept function", gInsightCategory)
+INSIGHTS_OPT("edu-show-padding", UseShowPadding, false, "Show the padding bytes in a struct/class", gInsightCategory)
 INSIGHTS_OPT("edu-show-coroutine-transformation",
              ShowCoroutineTransformation,
              false,
              "Show transformations of coroutines.",
-             gInsightEduCategory)
-INSIGHTS_OPT("edu-show-cfront", UseShow2C, false, "Show transformation to C", gInsightEduCategory)
-INSIGHTS_OPT("edu-show-lifetime", ShowLifetime, false, "Show lifetime of objects", gInsightEduCategory)
+             gInsightCategory)
+INSIGHTS_OPT("edu-show-cfront", UseShow2C, false, "Show transformation to C", gInsightCategory)
+INSIGHTS_OPT("edu-show-lifetime", ShowLifetime, false, "Show lifetime of objects", gInsightCategory)
 #undef INSIGHTS_OPT
